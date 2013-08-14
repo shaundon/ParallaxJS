@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	
+		<title>ParallaxJS Demo</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- jQuery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="parallax.js"></script>
+		<link href="parallax.css" rel="stylesheet" />
+		
+		<style>
+		
+			body {
+				text-align: center;
+				font-family: "Helvetica Neue", Arial, sans-serif;
+				color: #222;
+				font-size: 14px;
+			}
+			
+			.container {		
+				width: 50%;
+				margin: 10% auto;
+			}
+			
+			h1 {
+				font-size: 200%;
+			}
+		
+			.box {
+				width: 100px;
+				min-height: 100px;
+				border-radius: 5px;
+				color: #f6f6f6;
+				margin: 0 auto;
+				box-shadow: 0 0 5px rgba(0,0,0,.3);
+				text-align: center;
+				line-height: 20px;
+				padding-top: 10px;
+				box-sizing: border-box;
+			}
+			
+			.box.purple {
+				background-color: #93a;
+			}
+			
+			.box.red {
+				background-color: #c00;
+			}
+			
+			.box.blue {
+				background-color: #08c;
+			}
+			
+			p.grey {
+				color: #aaa;
+			}
+		
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<h1>ParallaxJS Demo</h1>		
+		
+		<div class="container">
+		
+			<p>The boxes should move around on screen as your device moves.</p>
+			
+			<p class="grey">If it doesn't work, your device doesn't support orientation.</p>
+			
+			<div class="box purple parallax">Normal</div>
+			
+			<div class="box blue parallax more">Increased Motion</div>
+			
+			<div class="box red parallax less">Reduced Motion</div>
+		
+		</div>
+	
+	</body>
+	
+</html>
