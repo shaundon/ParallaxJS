@@ -17,4 +17,7 @@ function Parallax(gamma, beta, direction) {
 			
 	$(".parallax.less").css("margin-top", Math.round(beta/2) + "px");
 	$(".parallax.less").css("margin-left", Math.round(gamma/2) + "px");
+	
+	$(".parallax.subtle").css("margin-top", Math.round(beta*0.2) + "px");
+	$(".parallax.subtle").css("margin-left", Math.round(gamma*0.2) + "px");
 }

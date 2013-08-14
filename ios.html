@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	
+		<title>ParallaxJS Demo</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- jQuery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="parallax.js"></script>
+		<link href="parallax.css" rel="stylesheet" />
+		
+		<style>
+		
+			body {
+				text-align: center;
+				font-family: "Helvetica Neue", Arial, sans-serif;
+				color: #ccc;
+				font-size: 14px;
+			}
+			
+			.container {		
+				width: 90%;
+				margin: 10% auto;
+				z-index: 1;
+				position: relative;
+			}
+			
+			h1 {
+				font-size: 200%;
+			}
+		
+			.box {
+				width: 50px;
+				height: 50px;
+				border-radius: 5px;
+				box-shadow: 0 0 15px rgba(0,0,0,.3);
+				background-color: #08c;
+				float: left;
+				margin: 20px;
+			}
+			
+			p.grey {
+				color: #aaa;
+			}
+			
+			.background {
+			
+				background: url('background.png');
+				position: fixed;
+				width: 120%;
+				height: 120%;
+				left: -5%;
+				top: -5%;
+				z-index: 0;
+			}
+		
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<div class="background parallax subtle"></div>		
+		
+		<div class="container">
+		
+			<h1>ParallaxJS Demo</h1>
+		
+			<p>The background should subtly shift as your device moves, like the iOS 7 home screen.</p>
+			
+			<p>If it doesn't work, your device doesn't support orientation.</p>
+			
+				<div class="box"></div>		
+				<div class="box"></div>			
+				<div class="box"></div>
+				<div class="box"></div>		
+				<div class="box"></div>			
+				<div class="box"></div>
+				<div class="box"></div>		
+				<div class="box"></div>			
+				<div class="box"></div>
+				<div class="box"></div>		
+				<div class="box"></div>			
+				<div class="box"></div>
+				<div class="box"></div>		
+				<div class="box"></div>			
+				<div class="box"></div>
+				<div class="box"></div>
+		
+		</div>
+	
+	</body>
+	
+</html>
